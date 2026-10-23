@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadline Aware Student Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Deadline Aware Student Task Planner</h1>
+            <p>Plan Smart, Finish on Time!</p>
+        </header>
+
+        <section class="task-form">
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+                <input type="text" id="taskName"
+                    placeholder="Enter task name" required>
+
+                <input type="date" id="deadline" required>
+
+                <select id="priority">
+                    <option value="High">High Priority</option>
+                    <option value="Medium" selected>Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="summary">
+            <div class="stat">
+                <h3>Total Tasks</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Pending Tasks</h3>
+                <p id="pending">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Completed Tasks</h3>
+                <p id="completed">0</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Tasks</h2>
+            <div id="taskList"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
